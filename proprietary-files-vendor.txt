@@ -787,23 +787,23 @@ vendor/lib64/librs_adreno_sha1.so
 # FFU
 vendor/bin/ffu|fe10f3c8d9e45831af0f10966e6d7c30a79f9fad
 
-# FINGERPRINT
-vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service
-vendor/etc/init/fpc_fingerprint@2.1_HIDL-service.rc
-vendor/firmware/tzfingerprint.b00
-vendor/firmware/tzfingerprint.b01
-vendor/firmware/tzfingerprint.b02
-vendor/firmware/tzfingerprint.b03
-vendor/firmware/tzfingerprint.b04
-vendor/firmware/tzfingerprint.b05
-vendor/firmware/tzfingerprint.b06
-vendor/firmware/tzfingerprint.b07
-vendor/firmware/tzfingerprint.mdt
-vendor/lib/lib_fpc_tac_shared.so
-vendor/lib64/lib_fpc_tac_shared.so
+# FINGERPRINT - disabled for US firmware
+#vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service
+#vendor/etc/init/fpc_fingerprint@2.1_HIDL-service.rc
+#vendor/firmware/tzfingerprint.b00
+#vendor/firmware/tzfingerprint.b01
+#vendor/firmware/tzfingerprint.b02
+#vendor/firmware/tzfingerprint.b03
+#vendor/firmware/tzfingerprint.b04
+#vendor/firmware/tzfingerprint.b05
+#vendor/firmware/tzfingerprint.b06
+#vendor/firmware/tzfingerprint.b07
+#vendor/firmware/tzfingerprint.mdt
+#vendor/lib/lib_fpc_tac_shared.so
+#vendor/lib64/lib_fpc_tac_shared.so
 
-# FINGERPRINT_EXTENSION
-vendor/lib64/com.fingerprints.extension@1.0.so
+# FINGERPRINT_EXTENSION - disabled for US firmware
+#vendor/lib64/com.fingerprints.extension@1.0.so
 
 # IDD
 vendor/bin/hw/vendor.semc.system.idd@1.0-service
@@ -1355,7 +1355,7 @@ vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/sensor_calibrate.so
-vendor/lib/sensors.finger-pickup.so
+#vendor/lib/sensors.finger-pickup.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/hw/activity_recognition.msm8998.so
 -vendor/lib64/libqmi_common_so.so
@@ -1364,7 +1364,7 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/sensor_calibrate.so
-vendor/lib64/sensors.finger-pickup.so
+#vendor/lib64/sensors.finger-pickup.so
 vendor/lib64/sensors.ssc.so
 
 # SSR (subsystem restart)

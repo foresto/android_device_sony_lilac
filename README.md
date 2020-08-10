@@ -6,6 +6,8 @@ Description
 
 This repository is for LineageOS 17.1 on Sony Xperia XZ1 Compact (lilac).
 
+It excludes fingerprint sensor support, for compatibility with US firmware.
+
 How to build LineageOS
 ----------------------
 
@@ -20,7 +22,7 @@ How to build LineageOS
 
 * Create a local manifest:
 
-        vim .repo/local_manifests/roomservice.xml
+        vim .repo/local_manifests/lineageos.xml
 
         <?xml version="1.0" encoding="UTF-8"?>
         <manifest>
@@ -28,7 +30,7 @@ How to build LineageOS
             <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-17.1" />
             <project name="whatawurst/android_device_sony_common-treble" path="device/sony/common-treble" remote="github" revision="lineage-17.1" />
             <project name="whatawurst/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="lineage-17.1" />
-            <project name="whatawurst/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="lineage-17.1" />
+            <project name="foresto/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="lineage-17.1-nofinger" />
 
             <!-- Pinned blobs for lilac -->
             <project name="whatawurst/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="lineage-17.1" />
